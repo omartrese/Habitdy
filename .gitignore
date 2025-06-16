@@ -1,7 +1,9 @@
 # Node modules
 /node_modules/
+
 # Svelte build output
 /public/build/
+
 # Tauri build output
 /src-tauri/target/
 # Tauri generated files
@@ -40,3 +42,6 @@ build/
 !/src/
 !/src-tauri/
 !.gitignore
+!package.json
+!pnpm-lock.yaml
+!pnpm-workspace.yaml
