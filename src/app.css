@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@theme {
+  --primary: #3B82F6;
+  --secondary: #22C55E;
+  --bg-primary: #F9FAFB;
+  --bg-secondary: #F3F4F6;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
