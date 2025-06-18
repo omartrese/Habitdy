@@ -1,5 +1,5 @@
 <script>
-  let { nextStep } = $props();
+  const { nextStep } = $props();
 </script>
 
 <section>

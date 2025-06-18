@@ -12,7 +12,7 @@
           class="w-8 h-8 rounded-full flex items-center justify-center text-white font-bold {currentStep ==
           index
             ? 'bg-blue-500'
-            : 'bg-gray-300'}"
+            : 'bg-gray-300'} {currentStep > index ? 'bg-green-500' : ''}"
         >
           {step}
         </div>
