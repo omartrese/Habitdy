@@ -1,7 +1,4 @@
 <script>
-  import "../app.css";
-
-  import { steps } from "$lib/StepData";
   import StepIndicator from "../lib/components/customExperience/StepIndicator.svelte";
   import Step1 from "$lib/components/customExperience/Step1.svelte";
   import Step2 from "$lib/components/customExperience/Step2.svelte";
@@ -13,7 +10,7 @@
   const nextStep = () => {
     currentStep += 1;
   };
-  
+
   const previousStep = () => {
     if (currentStep > 0) {
       currentStep -= 1;
@@ -41,8 +38,14 @@
       <Step2 {nextStep} />
     {:else if currentStep === 2}
       <Step3 {nextStep} />
-      {:else if currentStep === 3}
+    {:else if currentStep === 3}
       <Step4 {nextStep} />
     {/if}
   </section>
 </main>
+
+<style>
+  :global(body) {
+    user-select: none;
+  }
+</style>

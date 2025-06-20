@@ -1,31 +1,30 @@
 <script>
+  import ButtonSelection from "../reusableComponents/ButtonSelection.svelte";
   const { nextStep } = $props();
+
+  const HEALTH = 0,
+    STRESS = 1,
+    PRODUCTIVITY = 2,
+    GROWTH = 3,
+    RELATIONSHIPS = 4,
+    MONEY = 5,
+    OTHER = 6;
+    
 </script>
 
 <section>
   <h1>What's your main goal?</h1>
 
   <div class="flex flex-col items-center px-10 *:w-full">
-    <button onclick={nextStep}>Improve my health</button>
-    <button onclick={nextStep}>
-        Reduce stress and improve mental wellbeing
-    </button>
-    <button onclick={nextStep}>Be more productive</button>
-    <button onclick={nextStep}>Personal growth</button>
-    <button onclick={nextStep}>Improve my relationships</button>
-    <button onclick={nextStep}>Better manage my money</button>
-    <button onclick={nextStep}>Other</button>
+    <ButtonSelection values={[
+      { id: HEALTH, text: "Improve my health", icon: "/heart.svg" },
+      { id: STRESS, text: "Reduce stress and improve mental wellbeing", icon: "/brain.svg" },
+      { id: PRODUCTIVITY, text: "Be more productive", icon: "/clock.svg" },
+      { id: GROWTH, text: "Personal growth", icon: "/hatGraduate.svg" },
+      { id: RELATIONSHIPS, text: "Improve my relationships", icon: "/people.svg" },
+      { id: MONEY, text: "Better manage my money", icon: "/wallet.svg" },
+      { id: OTHER, text: "Other", icon: "/plus.svg" }
+    ]} nextStep={nextStep} />
   </div>
 </section>
 
-<style>
-  button {
-    background-color: #3b82f6;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 5px;
-  }
-</style>

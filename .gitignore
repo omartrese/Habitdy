@@ -41,6 +41,7 @@ build/
 /*
 !/src/
 !/src-tauri/
+!/static/
 !.gitignore
 !package.json
 !pnpm-lock.yaml

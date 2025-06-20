@@ -95,12 +95,12 @@
         ><input type="checkbox" name="habit" value="call_loved_one" /> Call a loved
         one every week</label
       >
-      <label
-        ><input type="checkbox" name="habit" value="family_time" /> Spend screen-free
+      <label>
+        <input type="checkbox" name="habit" value="family_time" /> Spend screen-free
         time with family</label
       >
-      <label
-        ><input type="checkbox" name="habit" value="act_of_kindness" /> Do a daily
+      <label>
+        <input type="checkbox" name="habit" value="act_of_kindness" /> Do a daily
         act of kindness</label
       >
     </fieldset>
