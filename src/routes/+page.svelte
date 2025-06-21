@@ -1,4 +1,7 @@
 <script>
+
+  import "../app.css";
+
   import StepIndicator from "../lib/components/customExperience/StepIndicator.svelte";
   import Step1 from "$lib/components/customExperience/Step1.svelte";
   import Step2 from "$lib/components/customExperience/Step2.svelte";

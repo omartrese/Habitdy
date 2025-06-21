@@ -11,17 +11,19 @@
   let selected = $state(-1);
 </script>
 
-<section >
+<section>
   <h1>When do you prefer to work on your habits?</h1>
-  <ButtonSelection 
-    values={[
-      { id: MORNING, text: "In the morning", icon: "/sun.svg" },
-      { id: AFTERNOON, text: "In the afternoon", icon: "/sunset.svg" },
-      { id: NIGHT, text: "At night", icon: "/moon.svg" },
-      { id: DEPENDS, text: "It depends on the day", icon: "/clock.svg" }
-    ]}
-    nextStep={nextStep}
-  />
+  <div class="flex flex-col items-center px-10 *:w-full">
+    <ButtonSelection
+      values={[
+        { id: MORNING, text: "In the morning", icon: "/sun.svg" },
+        { id: AFTERNOON, text: "In the afternoon", icon: "/sunset.svg" },
+        { id: NIGHT, text: "At night", icon: "/moon.svg" },
+        { id: DEPENDS, text: "It depends on the day", icon: "/clock.svg" },
+      ]}
+      {nextStep}
+    />
+  </div>
 </section>
 
 <style>
@@ -29,6 +31,4 @@
     margin-top: 0.5rem;
     margin-bottom: 0.25rem;
   }
-
-
 </style>
