@@ -48,7 +48,13 @@
 </main>
 
 <style>
+  :global(*) {
+    box-sizing: border-box;
+    margin:0;
+  }
+  
   :global(body) {
     user-select: none;
+    
   }
 </style>
